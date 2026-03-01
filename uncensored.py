@@ -5,7 +5,7 @@ from huggingface_hub import get_token
 import requests
 import io
 
-repo_id = "diffusers/FLUX.2-dev-bnb-4bit" #quantized text-encoder and DiT. VAE still in bf16
+repo_id = "black-forest-labs/FLUX.2-dev" 
 device = "cuda:0"
 torch_dtype = torch.bfloat16
 
