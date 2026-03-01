@@ -8,6 +8,9 @@
 # Allow .gitignore itself
 !.gitignore
 
+# Allow requirements.txt
+!requirements.txt
+
 # Ignore large/binary files that might match above patterns
 *.gguf
 *.safetensors
