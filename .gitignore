@@ -1,0 +1,30 @@
+# Ignore everything by default
+*
+
+# Allow .sh and .py files
+!*.sh
+!*.py
+
+# Allow .gitignore itself
+!.gitignore
+
+# Ignore large/binary files that might match above patterns
+*.gguf
+*.safetensors
+*.png
+*.jpg
+*.jpeg
+
+# Ignore cache and temp directories
+__pycache__/
+.claude/
+.locks/
+torchinductor_root/
+tvm-ffi-torch-c-dlpack-*/
+xet/
+modules/
+generated_images/
+unsloth/
+GLM-Image/
+HunyuanImage-3-Instruct/
+LTX-2/
