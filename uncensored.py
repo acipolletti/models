@@ -26,6 +26,8 @@ pipe = Flux2Pipeline.from_pretrained(
     repo_id, text_encoder=None, torch_dtype=torch_dtype
 ).to(device)
 
+pipe.enable_model_cpu_offload() #no need to do cpu offload for >80G VRAM carts like H200, B200, etc. and do a `pipe.to(device)` instead
+
 prompt = """
 An 18-year-old girl, light blonde, blue eyes, Scandinavian, beautiful face, full body, curvy body, large breasts,
 terracotta tanned skin, tan lines,standing with legs apart, urban street at night, warm city lights, soft shadows, 
